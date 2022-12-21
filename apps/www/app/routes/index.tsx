@@ -38,6 +38,7 @@ export default function Index() {
           { url: 'https://www.thryve.io/', title: 'Thryve' },
           { url: 'https://www.learn.stitchedstory.com/', title: 'Stitched Story' },
           { url: 'https://www.hrvids.com/', title: 'HR Vids' },
+          { url: 'http://www.talkingstick.tv', title: 'Talking Stick' },
         ]}
       />
       <h2>Contract work</h2>
@@ -47,6 +48,8 @@ export default function Index() {
           { url: 'https://www.wycliffe.org/', title: 'Wycliffe' },
           { url: 'https://www.cru.org/', title: 'Cru' },
           { url: 'https://www.tribl.com/', title: 'Tribl' },
+          { url: 'https://graphiumhealth.com/', title: 'Graphium Health' },
+          { url: 'https://fieldmed.com/', title: 'FieldMed' },
         ]}
       />
     </Page>
