@@ -12,6 +12,7 @@
     "start": "pnpm dev",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "lint:ts": "turbo run lint:ts",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {

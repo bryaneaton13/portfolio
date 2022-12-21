@@ -9,6 +9,9 @@
     "lint": {
       "outputs": []
     },
+    "lint:ts": {
+      "outputs": []
+    },
     "start": {
       "cache": false
     },
