@@ -12,7 +12,7 @@ importers:
       prettier: 2.8.1
       turbo: 1.6.3
 
-  apps/blog:
+  apps/blog-complex:
     specifiers:
       '@next/bundle-analyzer': 13.0.7
       '@next/font': 13.0.7
