@@ -16,11 +16,13 @@ importers:
     specifiers:
       '@mdx-js/loader': ^2.2.1
       '@mdx-js/react': ^2.2.1
+      '@next/font': 13.0.7
       '@next/mdx': ^13.1.0
       '@tailwindcss/typography': ^0.5.8
       '@types/react': ^18.0.26
       '@types/react-dom': ^18.0.9
       autoprefixer: ^10.4.13
+      classnames: ^2.3.2
       eslint: 8.30.0
       eslint-config-custom: workspace:*
       eslint-config-next: 13.1.0
@@ -36,8 +38,10 @@ importers:
     dependencies:
       '@mdx-js/loader': 2.2.1
       '@mdx-js/react': 2.2.1_react@18.2.0
+      '@next/font': 13.0.7
       '@next/mdx': 13.1.0_vvg67iglxhejglpl7nsv3pjzui
       '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
+      classnames: 2.3.2
       gray-matter: 4.0.3
       next: 13.1.0_biqbaboplfbrettd7655fr4n2y
       next-mdx-remote: 3.0.8_biqbaboplfbrettd7655fr4n2y
