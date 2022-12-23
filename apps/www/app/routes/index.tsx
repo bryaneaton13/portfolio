@@ -1,3 +1,4 @@
+import { Links } from 'shared-utils';
 import ExtLink from '~/components/ExtLink';
 import Page from '~/components/Page';
 
@@ -27,7 +28,7 @@ export default function Index() {
       <h2>Profiles</h2>
       <List
         links={[
-          { url: 'https://github.com/bryaneaton13', title: 'GitHub' },
+          { url: Links.Github, title: 'GitHub' },
           { url: 'https://www.linkedin.com/in/bryan-eaton/', title: 'LinkedIn' },
           { url: 'https://stackblitz.com/@bryaneaton13', title: 'Stackblitz' },
         ]}

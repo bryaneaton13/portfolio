@@ -1,22 +1,28 @@
 import { Link, NavLink } from '@remix-run/react';
 import classNames from 'classnames';
-import { Configs } from '~/utils/configs';
+import { Links } from 'shared-utils';
 import Title from './Title';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function Linky({ to, text }: { to: string; text: string }) {
+  const classes =
+    'block py-1 pr-4 pl-3 bg-transparent text-white p-0 hover:text-blue-300 md:py-2 nav-link nav-link-underline';
+  if (to.startsWith('http'))
+    return (
+      <li>
+        <a href={to} className={classNames(classes)}>
+          Blog
+        </a>
+      </li>
+    );
   return (
     <li>
       <NavLink
         to={to}
         className={({ isActive }) =>
-          classNames(
-            'block py-1 pr-4 pl-3 bg-transparent text-white p-0 hover:text-blue-300 md:py-2',
-            {
-              'text-blue-400 font-bold': isActive,
-            },
-            'nav-link nav-link-underline',
-          )
+          classNames(classes, {
+            'text-blue-400 font-bold': isActive,
+          })
         }
       >
         {text}
@@ -29,7 +35,7 @@ function LinksList() {
   return (
     <>
       <Linky to="/" text="Home" />
-      <Linky to="/resume" text="Resume" />
+      <Linky to={Links.Blog} text="Blog" />
       {/* {Configs.isLocal && <Linky to="/contact" text="Contact" />} */}
     </>
   );

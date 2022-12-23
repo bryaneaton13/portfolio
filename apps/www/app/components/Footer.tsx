@@ -1,4 +1,4 @@
-import { Links } from '~/utils/configs';
+import { Links } from 'shared-utils';
 
 export default function Footer() {
   return (
