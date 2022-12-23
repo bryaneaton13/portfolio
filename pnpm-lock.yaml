@@ -29,6 +29,7 @@ importers:
       gray-matter: ^4.0.3
       next: 13.1.0
       next-mdx-remote: 3.0.8
+      next-themes: ^0.2.1
       postcss: ^8.4.20
       react: 18.2.0
       react-dom: 18.2.0
@@ -45,6 +46,7 @@ importers:
       gray-matter: 4.0.3
       next: 13.1.0_biqbaboplfbrettd7655fr4n2y
       next-mdx-remote: 3.0.8_biqbaboplfbrettd7655fr4n2y
+      next-themes: 0.2.1_s75y6mxmikaw2mhqmuko6w7njm
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -9107,6 +9109,18 @@ packages:
       react-dom: '*'
     dependencies:
       next: 13.0.7_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /next-themes/0.2.1_s75y6mxmikaw2mhqmuko6w7njm:
+    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      next: 13.1.0_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false

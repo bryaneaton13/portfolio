@@ -3,13 +3,12 @@ import { Post } from '../helpers/types';
 
 function PostCard({ title, date, description, slug }: Post): JSX.Element {
   return (
-    <div className="my-4 py-4 border-b">
-      <h2 className="font-bold text-xl my-4">{title}</h2>
-      <time className="text-gray-400">{date}</time>
-      <p className="mt-4 italic">{description}</p>
-
-      <Link href="/[slug]" className="text-blue-500 mt-4 mb-2 block" as={`/${slug}`}>
-        Read more
+    <div className="p-4 border-b hover:bg-gray-100 dark:hover:bg-gray-800 hover:scale-[1.005] transition-transform">
+      <Link href="/[slug]" className="" as={`/${slug}`}>
+        <h3 className="font-bold text-2xl">{title}</h3>
+        <div className="italic text-sm mt-1">{date}</div>
+        <div className="mt-3 italic">{description}</div>
+        <span className="text-sm mt-2 text-blue-500 hover:underline">Read more</span>
       </Link>
     </div>
   );

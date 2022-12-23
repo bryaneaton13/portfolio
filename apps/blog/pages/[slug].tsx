@@ -6,11 +6,14 @@ import { getPost, getPosts } from '../helpers/posts';
 function Post({ data, content }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
-      <h1 className="font-bold text-7xl mt-24 mb-12">{data.title}</h1>
-      <time className="text-gray-500 italic">{data.date}</time>
-      <p className="prose mt-12">
+      <div className="border-b mb-8 pb-8 p-5">
+        <h1 className="font-bold text-xl mt-4 mb-2">{data.title}</h1>
+        <div className="mb-2">{data.description}</div>
+        <div className="italic text-sm">{data.date}</div>
+      </div>
+      <div className="prose dark:prose-dark p-5">
         <MDXRemote {...content} />
-      </p>
+      </div>
     </div>
   );
 }
