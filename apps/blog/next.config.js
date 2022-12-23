@@ -1,4 +1,6 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ * */
 const nextMDX = require('@next/mdx');
 
 const withMDX = nextMDX({
@@ -9,8 +11,10 @@ const withMDX = nextMDX({
   },
 });
 
-module.exports = withMDX({
+module.exports = {
   reactStrictMode: true,
-  // Support MDX files as pages:
-  pageExtensions: ['md', 'mdx', 'tsx', 'ts', 'jsx', 'js'],
-});
+  ...withMDX({
+    // Support MDX files as pages:
+    pageExtensions: ['md', 'mdx', 'tsx', 'ts', 'jsx', 'js'],
+  }),
+};

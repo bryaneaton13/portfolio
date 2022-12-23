@@ -8,9 +8,11 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "www": "turbo run dev --filter=www",
     "start": "pnpm dev",
     "dev": "turbo run dev --parallel",
+    "blog": "turbo run dev --filter=blog",
+    "www": "turbo run dev --filter=www",
+    "docs": "turbo run dev --filter=docs",
     "lint": "turbo run lint",
     "lint:ts": "turbo run lint:ts",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
