@@ -12,6 +12,7 @@ export const Links = {
   Repo: 'https://github.com/bryaneaton13/portfolio',
   Www: Configs.isLocal ? 'http://localhost:3002' : 'https://www.bryaneaton.com',
   Blog: Configs.isLocal ? 'http://localhost:3000' : 'https://blog.bryaneaton.com',
+  App: Configs.isLocal ? 'http://localhost:3000' : 'https://app.bryaneaton.com',
 };
 
 export const uniqArr = <T>(arr: T[]): T[] => [...new Set(arr)];

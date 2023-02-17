@@ -12,6 +12,7 @@
     "dev": "turbo run dev --parallel",
     "blog": "turbo run dev --filter=blog",
     "www": "turbo run dev --filter=www",
+    "app": "turbo run dev --filter=app",
     "docs": "turbo run dev --filter=docs",
     "lint": "turbo run lint",
     "lint:ts": "turbo run lint:ts",
