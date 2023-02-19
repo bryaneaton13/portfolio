@@ -15,12 +15,12 @@
     "lint:ts": "tsc --noEmit"
   },
   "dependencies": {
-    "@types/node": "^18.11.17"
+    "@types/node": "^18.14.0"
   },
   "devDependencies": {
-    "eslint": "^8.30.0",
+    "eslint": "^8.34.0",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   }
 }
