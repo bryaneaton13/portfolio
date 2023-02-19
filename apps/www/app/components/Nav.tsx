@@ -1,9 +1,8 @@
 import { Link, NavLink } from '@remix-run/react';
 import classNames from 'classnames';
-import { Links } from 'shared-utils';
+import { Configs, Links } from 'shared-utils';
 import Title from './Title';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function Linky({ to, text }: { to: string; text: string }) {
   const classes =
     'block py-1 pr-4 pl-3 bg-transparent text-white p-0 hover:text-blue-300 md:py-2 nav-link nav-link-underline';
@@ -37,6 +36,7 @@ function LinksList() {
       <Linky to="/" text="Home" />
       <Linky to={Links.Blog} text="Blog" />
       {/* {Configs.isLocal && <Linky to="/contact" text="Contact" />} */}
+      {Configs.isLocal && <Linky to="/apps" text="Apps" />}
     </>
   );
 }

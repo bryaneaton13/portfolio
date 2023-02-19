@@ -1,6 +1,3 @@
-/**
- * @type {import('next').NextConfig}
- * */
 const nextMDX = require('@next/mdx');
 
 const withMDX = nextMDX({
@@ -11,6 +8,7 @@ const withMDX = nextMDX({
   },
 });
 
+/** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
   ...withMDX({

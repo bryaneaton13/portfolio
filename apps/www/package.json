@@ -10,7 +10,7 @@
   "scripts": {
     "build": "pnpm run build:css && remix build",
     "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
-    "dev": "concurrently \"pnpm run dev:css\" \"remix dev\"",
+    "dev": "concurrently \"pnpm run dev:css\" \"PORT=3002 remix dev\"",
     "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
     "start": "pnpm run dev",
     "lint": "eslint \"app/**/*.+(ts|js|tsx)\"",
