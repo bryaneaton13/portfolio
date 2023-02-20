@@ -20,12 +20,11 @@
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
-    "prettier": "latest",
-    "turbo": "latest"
+    "prettier": "^2.8.4",
+    "turbo": "^1.8.1"
   },
   "engines": {
     "node": ">=16"
   },
-  "dependencies": {},
   "packageManager": "pnpm@7.19.0"
 }
